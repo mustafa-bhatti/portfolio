@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mustafa Bhatti — Dispatch Board Variations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="switcher" aria-label="Design variation switcher">
+    <div class="switcher-inner">
+      <span class="switcher-label">Dispatch Board — 3 layout variations, same locked world</span>
+      <div class="switcher-tabs" role="tablist">
+        <button class="tab" data-target="var-a" role="tab" aria-selected="true">01 · Compact List</button>
+        <button class="tab" data-target="var-b" role="tab" aria-selected="false">02 · Grid Board</button>
+        <button class="tab" data-target="var-c" role="tab" aria-selected="false">03 · Live Monitor</button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ============================================================ -->
+    <!-- VARIATION A — COMPACT LIST (the proven baseline, refined)     -->
+    <!-- ============================================================ -->
+    <section id="var-a" class="design active" data-design="a">
+      <header class="db-header">
+        <span class="db-wordmark">Mustafa Bhatti</span>
+        <div class="db-nav">
+          <a href="#">Work</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <span class="db-status-pill"><span class="db-dot"></span>AVAILABLE FOR WORK</span>
+        </div>
+      </header>
+
+      <section class="db-hero">
+        <h1>AI automation that<br />runs your business</h1>
+        <p>Junior AI/ML engineer building the software that runs day-to-day operations.</p>
+        <div class="db-cta-row">
+          <button class="db-btn db-btn-solid">View Work</button>
+          <button class="db-btn db-btn-outline">Get in Touch</button>
+        </div>
+      </section>
+
+      <section class="db-list">
+        <div class="db-row reveal" data-status="live">
+          <span class="db-num flap" data-final="01">00</span>
+          <div class="db-row-main">
+            <span class="db-project">TeachingCircle</span>
+            <div class="db-tags">
+              <span class="db-tag">Meta Cloud API</span><span class="db-tag">FastAPI</span><span class="db-tag">Redis</span><span class="db-tag">Alpine.js</span>
+            </div>
+            <p class="db-reveal-line">Freelance enrollment bot for an academy in Lahore — cost-efficient stack by design.</p>
+          </div>
+          <span class="db-badge db-badge-solid flap" data-final="LIVE">····</span>
+        </div>
+        <div class="db-row reveal" data-status="live">
+          <span class="db-num flap" data-final="02">00</span>
+          <div class="db-row-main">
+            <span class="db-project">HOF Vault</span>
+            <div class="db-tags">
+              <span class="db-tag">Next.js</span><span class="db-tag">Supabase</span><span class="db-tag">Expo / RN</span><span class="db-tag">Railway OCR</span>
+            </div>
+            <p class="db-reveal-line">Employee benefits + QR dine-in ordering platform, live in production, web and mobile.</p>
+          </div>
+          <span class="db-badge db-badge-solid flap" data-final="LIVE">····</span>
+        </div>
+        <div class="db-row reveal" data-status="shipped">
+          <span class="db-num flap" data-final="03">00</span>
+          <div class="db-row-main">
+            <span class="db-project">PsychConnect</span>
+            <div class="db-tags">
+              <span class="db-tag">Next.js 16</span><span class="db-tag">TypeScript</span><span class="db-tag">FastAPI</span><span class="db-tag">Gemini AI</span>
+            </div>
+            <p class="db-reveal-line">Full-stack telepsychology platform — RLS security model, Gemini-powered assessment scoring.</p>
+          </div>
+          <span class="db-badge db-badge-solid flap" data-final="SHIPPED">·······</span>
+        </div>
+        <div class="db-row reveal" data-status="demo">
+          <span class="db-num flap" data-final="04">00</span>
+          <div class="db-row-main">
+            <span class="db-project">Easy-PDF</span>
+            <div class="db-tags">
+              <span class="db-tag">LangChain</span><span class="db-tag">PostgreSQL</span><span class="db-tag">Docker</span>
+            </div>
+            <p class="db-reveal-line">Privacy-first local RAG tool — chat with PDFs entirely on-device, zero data leakage.</p>
+          </div>
+          <span class="db-badge db-badge-outline flap" data-final="DEMO">····</span>
+        </div>
+      </section>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- VARIATION B — GRID BOARD (2x2 ticket cards)                   -->
+    <!-- ============================================================ -->
+    <section id="var-b" class="design" data-design="b">
+      <header class="db-header">
+        <span class="db-wordmark">Mustafa Bhatti</span>
+        <div class="db-nav">
+          <a href="#">Work</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <span class="db-status-pill"><span class="db-dot"></span>AVAILABLE FOR WORK</span>
+        </div>
+      </header>
+
+      <section class="db-hero db-hero-center">
+        <h1>AI automation that<br />runs your business</h1>
+        <p>Junior AI/ML engineer building the software that runs day-to-day operations.</p>
+        <div class="db-cta-row">
+          <button class="db-btn db-btn-solid">View Work</button>
+          <button class="db-btn db-btn-outline">Get in Touch</button>
+        </div>
+      </section>
+
+      <section class="db-grid">
+        <div class="db-ticket reveal" data-status="live">
+          <div class="db-ticket-top">
+            <span class="db-num flap" data-final="01">00</span>
+            <span class="db-badge db-badge-solid flap" data-final="LIVE">····</span>
+          </div>
+          <span class="db-project">TeachingCircle</span>
+          <p class="db-ticket-desc">Enrollment bot for an academy in Lahore.</p>
+          <div class="db-tags"><span class="db-tag">Meta Cloud API</span><span class="db-tag">FastAPI</span><span class="db-tag">Redis</span></div>
+        </div>
+        <div class="db-ticket reveal" data-status="live">
+          <div class="db-ticket-top">
+            <span class="db-num flap" data-final="02">00</span>
+            <span class="db-badge db-badge-solid flap" data-final="LIVE">····</span>
+          </div>
+          <span class="db-project">HOF Vault</span>
+          <p class="db-ticket-desc">Employee benefits + dine-in ordering, live in production.</p>
+          <div class="db-tags"><span class="db-tag">Next.js</span><span class="db-tag">Supabase</span><span class="db-tag">Expo / RN</span></div>
+        </div>
+        <div class="db-ticket reveal" data-status="shipped">
+          <div class="db-ticket-top">
+            <span class="db-num flap" data-final="03">00</span>
+            <span class="db-badge db-badge-solid flap" data-final="SHIPPED">·······</span>
+          </div>
+          <span class="db-project">PsychConnect</span>
+          <p class="db-ticket-desc">Telepsychology platform, RLS security model.</p>
+          <div class="db-tags"><span class="db-tag">Next.js 16</span><span class="db-tag">FastAPI</span><span class="db-tag">Gemini AI</span></div>
+        </div>
+        <div class="db-ticket reveal" data-status="demo">
+          <div class="db-ticket-top">
+            <span class="db-num flap" data-final="04">00</span>
+            <span class="db-badge db-badge-outline flap" data-final="DEMO">····</span>
+          </div>
+          <span class="db-project">Easy-PDF</span>
+          <p class="db-ticket-desc">Local RAG tool, zero data leakage.</p>
+          <div class="db-tags"><span class="db-tag">LangChain</span><span class="db-tag">Docker</span></div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- VARIATION C — LIVE MONITOR (ticker + persistent sidebar)      -->
+    <!-- ============================================================ -->
+    <section id="var-c" class="design" data-design="c">
+      <header class="db-header">
+        <span class="db-wordmark">Mustafa Bhatti</span>
+        <div class="db-nav">
+          <a href="#">Work</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </header>
+
+      <div class="db-monitor-layout">
+        <aside class="db-sidebar">
+          <div class="db-sidebar-stat">
+            <span class="db-sidebar-num flap" data-final="02">00</span>
+            <span class="db-sidebar-label">LIVE</span>
+          </div>
+          <div class="db-sidebar-stat">
+            <span class="db-sidebar-num flap" data-final="01">00</span>
+            <span class="db-sidebar-label">SHIPPED</span>
+          </div>
+          <div class="db-sidebar-stat">
+            <span class="db-sidebar-num flap" data-final="01">00</span>
+            <span class="db-sidebar-label">DEMO</span>
+          </div>
+          <div class="db-sidebar-anchors">
+            <a href="#">TeachingCircle</a>
+            <a href="#">HOF Vault</a>
+            <a href="#">PsychConnect</a>
+            <a href="#">Easy-PDF</a>
+          </div>
+        </aside>
+
+        <div class="db-monitor-main">
+          <section class="db-hero db-hero-tight">
+            <h1>AI automation that<br />runs your business</h1>
+            <p>Junior AI/ML engineer building the software that runs day-to-day operations.</p>
+            <div class="db-cta-row">
+              <button class="db-btn db-btn-solid">View Work</button>
+              <button class="db-btn db-btn-outline">Get in Touch</button>
+            </div>
+          </section>
+
+          <section class="db-list db-list-tight">
+            <div class="db-row reveal" data-status="live">
+              <span class="db-num flap" data-final="01">00</span>
+              <div class="db-row-main">
+                <span class="db-project">TeachingCircle</span>
+                <div class="db-tags"><span class="db-tag">Meta Cloud API</span><span class="db-tag">FastAPI</span><span class="db-tag">Redis</span></div>
+              </div>
+              <span class="db-badge db-badge-solid flap" data-final="LIVE">····</span>
+            </div>
+            <div class="db-row reveal" data-status="live">
+              <span class="db-num flap" data-final="02">00</span>
+              <div class="db-row-main">
+                <span class="db-project">HOF Vault</span>
+                <div class="db-tags"><span class="db-tag">Next.js</span><span class="db-tag">Supabase</span><span class="db-tag">Expo / RN</span></div>
+              </div>
+              <span class="db-badge db-badge-solid flap" data-final="LIVE">····</span>
+            </div>
+            <div class="db-row reveal" data-status="shipped">
+              <span class="db-num flap" data-final="03">00</span>
+              <div class="db-row-main">
+                <span class="db-project">PsychConnect</span>
+                <div class="db-tags"><span class="db-tag">Next.js 16</span><span class="db-tag">FastAPI</span><span class="db-tag">Gemini AI</span></div>
+              </div>
+              <span class="db-badge db-badge-solid flap" data-final="SHIPPED">·······</span>
+            </div>
+            <div class="db-row reveal" data-status="demo">
+              <span class="db-num flap" data-final="04">00</span>
+              <div class="db-row-main">
+                <span class="db-project">Easy-PDF</span>
+                <div class="db-tags"><span class="db-tag">LangChain</span><span class="db-tag">Docker</span></div>
+              </div>
+              <span class="db-badge db-badge-outline flap" data-final="DEMO">····</span>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<script src="script.js"></script>
+</body>
+</html>

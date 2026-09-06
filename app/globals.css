@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-space-grotesk), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --color-cream: #FAF6EC;
+  --color-charcoal: #1A1A1A;
+  --color-amber-accent: #D69E2E;
+  --color-amber-dim: #a97a1f;
+}
+
+@keyframes db-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(0.75);
+  }
+}
+
+@keyframes db-badge-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(214, 158, 46, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(214, 158, 46, 0);
+  }
+}
+
+.animate-badge-pulse {
+  animation: db-badge-pulse 2.4s ease-in-out infinite;
+}
+
+.animate-dot-pulse {
+  animation: db-pulse 2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .animate-badge-pulse,
+  .animate-dot-pulse {
+    animation: none !important;
+  }
+}
+
+body {
+  background-color: #FAF6EC;
+  color: #1A1A1A;
+  font-family: var(--font-sans);
+}
